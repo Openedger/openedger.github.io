@@ -3,7 +3,7 @@ read_time: true
 show_date: true
 title: "solve Gitalk not found error"
 date: 2022-01-11
-img: posts/20210402/post7-header.webp
+img: posts/20210420/post8-rembrandt.jpg
 tags: [general blogging, thoughts]
 author: openedger
 description: "how to handle with not found error when you deployed Gitalk for comment feature on your blogs"
