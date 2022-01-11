@@ -674,21 +674,28 @@ for example: New_weight_x = Old_weight_x + error * x * learning rate
   </div>
 </div> <!-- End Recent-Box -->
 
-        <div class="newsletter" id="mc_embed_signup">
-  <h2 class="page-subtitle">Newsletter</h2>
-  <div class="form-container">
-    <p>Subscribe here to get our latest updates</p>
-    <form action="https://github.us1.list-manage.com/subscribe/post?u=8ece198b3eb260e6838461a60&amp;id=397d90b5f4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <label class="screen-reader-text" for="mce-EMAIL">Email Address</label>
-      <div class="newsletter-box" id="mc_embed_signup_scroll">
-        <input type="email" name="EMAIL" placeholder="Email address" class="email-input" id="mce-EMAIL" required>
-        <input type="submit" value="Subscribe" name="subscribe" class="subscribe-btn" id="mc-embedded-subscribe">
-      </div>
-    </form>
-  </div>
-</div> <!-- End Newsletter -->
+        <!-- Link Gitalk 的支持文件  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+<script type="text/javascript" src="/assets/js/md5.min.js"></script>
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+    const gitalk = new Gitalk({
 
-        
+    // gitalk的主要参数
+        clientID: 'e229cb4d2d6fba695913',
+        clientSecret: '3b7f71d31f327dd113058ffb3254dbfd10f594a9',
+        repo: 'https://openedger.github.io/',
+        owner: 'openedger',
+        admin: ['openedger'],
+        id: location.pathname,
+        distractionFreeMode: false
+    });
+    gitalk.render('gitalk-container');
+</script>
+<!-- Gitalk end -->
+
+    
 
       </div>
     </div> <!-- End Wrapper -->
@@ -722,7 +729,7 @@ for example: New_weight_x = Old_weight_x + error * x * learning rate
             </a>
         </div>
         <div class="copyright">
-          <p>2021 &copy; Barrios</p>
+          <p>2022 &copy; Barrios</p>
         </div>
         <div class="footer-nav">
             <div>
@@ -743,6 +750,8 @@ for example: New_weight_x = Old_weight_x + error * x * learning rate
         </div>
     </div>
 </footer> <!-- End Footer -->
+
+
 
 </div>
 

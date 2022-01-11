@@ -43,7 +43,16 @@ mailchimp: "https://github.us1.list-manage.com/subscribe/post?u=8ece198b3eb260e6
 
 # Disqus
 discus_identifier:  # Add your discus identifier
-comments_curtain: yes # leave empty to show the disqus embed directly
+comments_curtain:  # leave empty to show the disqus embed directly
+
+# #Comment
+# gitalk: true
+# gitalk_clientID: 'e229cb4d2d6fba695913'
+# gitalk_Secret: '3b7f71d31f327dd113058ffb3254dbfd10f594a9'
+# gitalk_repo: 'openedger.github.io'
+# gitalk_owner: 'openedger'
+# gitalk_admin: 'openedger'
+# distractionFreeMode: true
 
 # Tracker
 analytics:

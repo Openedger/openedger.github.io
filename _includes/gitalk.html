@@ -1,0 +1,20 @@
+<!-- Link Gitalk 的支持文件  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+<script type="text/javascript" src="/assets/js/md5.min.js"></script>
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+    const gitalk = new Gitalk({
+
+    // gitalk的主要参数
+        clientID: 'e229cb4d2d6fba695913',
+        clientSecret: '3b7f71d31f327dd113058ffb3254dbfd10f594a9',
+        repo: 'https://openedger.github.io/',
+        owner: 'openedger',
+        admin: ['openedger'],
+        id: location.pathname,
+        distractionFreeMode: false
+    });
+    gitalk.render('gitalk-container');
+</script>
+<!-- Gitalk end -->
