@@ -1,0 +1,13 @@
+I"i<p>I chose the Jekyll theme: <a href="https://github.com/the-mvm/the-mvm.github.io">Adam Blog 2.0</a> as my github blog pages.The official guide is very clear and simple so that I can deploy my blog very fast.</p>
+
+<p>But the original comment plug-in:Disqus is a paid service, so I tried another popular comment tool:<a href="https://gitalk.github.io/">GiTalk</a>.Everything is fine until I met with “Not Found” Error when I deployed.</p>
+
+<p>The followings are the steps to solve this “Not Found” error when activating gitalk on your webpage:</p>
+<ol>
+  <li>Create a new github repo for comments storage</li>
+  <li>Enabling the “issues” of this repo,and activate the “issue”</li>
+  <li>Configure the OAuth Apps in Github Apps setting</li>
+  <li>Configure the “repo” of gitalk js code without “https://” ,
+like this:  repo: blog-comments</li>
+</ol>
+:ET
