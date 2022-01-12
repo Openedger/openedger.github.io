@@ -1,15 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-12T11:30:25+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Openedger’s Blog</title><subtitle>Video Streaming trends and concepts made easy.</subtitle><author><name>Barrios</name></author><entry><title type="html">solve Gitalk not found error</title><link href="http://localhost:4000/solve-Gitalk-not-found-error.html" rel="alternate" type="text/html" title="solve Gitalk not found error" /><published>2022-01-11T00:00:00+08:00</published><updated>2022-01-11T00:00:00+08:00</updated><id>http://localhost:4000/solve%20Gitalk%20not%20found%20error</id><content type="html" xml:base="http://localhost:4000/solve-Gitalk-not-found-error.html">&lt;p&gt;I chose the Jekyll theme: &lt;a href=&quot;https://github.com/the-mvm/the-mvm.github.io&quot;&gt;Adam Blog 2.0&lt;/a&gt; as my github blog pages.The official guide is very clear and simple so that I can deploy my blog very fast.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-12T12:15:34+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Openedger’s Blog</title><subtitle>Video Streaming trends and concepts made easy.</subtitle><author><name>Barrios</name></author><entry><title type="html">solve Gitalk not found error</title><link href="http://localhost:4000/solve-Gitalk-not-found-error.html" rel="alternate" type="text/html" title="solve Gitalk not found error" /><published>2022-01-11T00:00:00+08:00</published><updated>2022-01-11T00:00:00+08:00</updated><id>http://localhost:4000/solve%20Gitalk%20not%20found%20error</id><content type="html" xml:base="http://localhost:4000/solve-Gitalk-not-found-error.html">&lt;p&gt;I chose the Jekyll theme: &lt;a href=&quot;https://github.com/the-mvm/the-mvm.github.io&quot;&gt;Adam Blog 2.0&lt;/a&gt; as my github blog pages.The official guide is very clear and simple so that I can deploy my blog very fast.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/img/template_screenshots/homepage-responsive.jpg&quot; alt=&quot;my new blog&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/img/template_screenshots/light-toggle.png&quot; alt=&quot;night theme toggle&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;But the original comment plug-in:Disqus is a paid service, so I tried another popular comment tool:&lt;a href=&quot;https://gitalk.github.io/&quot;&gt;GiTalk&lt;/a&gt;.Everything is fine until I met with “Not Found” Error when I deployed.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;./assets/img/posts/20220111/GiTalk_error.png&quot; alt=&quot;not found error&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;The followings are the steps to solve this “Not Found” error when activating gitalk on your webpage:&lt;/p&gt;
-&lt;ol&gt;
+&lt;ul&gt;
   &lt;li&gt;Create a new github repo for comments storage&lt;/li&gt;
-  &lt;li&gt;Enabling the “issues” of this repo,and activate the “issue”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/img/posts/20220111/create_new_repo_comment.png&quot; alt=&quot;create comment repo&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Enabling the “issues” of this repo,and activate the “issues” with first comment&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/img/posts/20220111/issues_enabled.png&quot; alt=&quot;issues enabled&quot; /&gt;
+&lt;img src=&quot;./assets/img/posts/20220111/create_first_comment.png&quot; alt=&quot;first comment&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
   &lt;li&gt;Configure the OAuth Apps in Github Apps setting&lt;/li&gt;
-  &lt;li&gt;Configure the “repo” of gitalk js code without “https://” ,
-like this:  repo: blog-comments&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>openedger</name></author><category term="general blogging" /><category term="thoughts" /><summary type="html">I chose the Jekyll theme: Adam Blog 2.0 as my github blog pages.The official guide is very clear and simple so that I can deploy my blog very fast.</summary></entry><entry><title type="html">Welcome to openedger’s blog</title><link href="http://localhost:4000/welcome-to-openedger's-blog.html" rel="alternate" type="text/html" title="Welcome to openedger’s blog" /><published>2021-12-31T00:00:00+08:00</published><updated>2021-12-31T00:00:00+08:00</updated><id>http://localhost:4000/welcome-to-openedger&apos;s-blog</id><content type="html" xml:base="http://localhost:4000/welcome-to-openedger&apos;s-blog.html">&lt;p&gt;Welcome to my blog - Openedger.
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/img/posts/20220111/clientID_key.png&quot; alt=&quot;app kid key&quot; /&gt;
+&lt;img src=&quot;./assets/img/posts/20220111/set_OAuth.png&quot; alt=&quot;set Oauth&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Configure the “repo” of gitalk js code without “https://” prefix ,
+just set it like this:  repo: blog-comments(repo name)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/img/posts/20220111/set repo.png&quot; alt=&quot;Set repo name&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, you can see the perfect GiTalk tool on your webpage.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/img/posts/20220111/correct_GiTalk.png&quot; alt=&quot;enjoy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Enjoy GiTalk!&lt;/p&gt;</content><author><name>openedger</name></author><category term="general blogging" /><category term="thoughts" /><summary type="html">I chose the Jekyll theme: Adam Blog 2.0 as my github blog pages.The official guide is very clear and simple so that I can deploy my blog very fast.</summary></entry><entry><title type="html">Welcome to openedger’s blog</title><link href="http://localhost:4000/welcome-to-openedger's-blog.html" rel="alternate" type="text/html" title="Welcome to openedger’s blog" /><published>2021-12-31T00:00:00+08:00</published><updated>2021-12-31T00:00:00+08:00</updated><id>http://localhost:4000/welcome-to-openedger&apos;s-blog</id><content type="html" xml:base="http://localhost:4000/welcome-to-openedger&apos;s-blog.html">&lt;p&gt;Welcome to my blog - Openedger.
 In this blog, I will post and share my ideas and also news and technologies about video streaming,blockchain,web3.&lt;/p&gt;</content><author><name>openedger</name></author><category term="general blogging" /><category term="thoughts" /><category term="life" /><summary type="html">Welcome to my blog - Openedger. In this blog, I will post and share my ideas and also news and technologies about video streaming,blockchain,web3.</summary></entry><entry><title type="html">Starting the adventure</title><link href="http://localhost:4000/starting-the-adventure.html" rel="alternate" type="text/html" title="Starting the adventure" /><published>2021-03-24T00:00:00+08:00</published><updated>2021-03-24T00:00:00+08:00</updated><id>http://localhost:4000/starting-the-adventure</id><content type="html" xml:base="http://localhost:4000/starting-the-adventure.html">&lt;p&gt;In the midst of a global pandemic caused by the SARS-COV2 coronavirus; I decided to start blogging. I wanted to blog since a long time, I have always enjoyed writing, but many unknowns and having “no time” for it prevented me from taking it up. Things like: “I don’t really know who my target audience is”, “what would my topic or topics be?”, “I don’t think I am a world-class expert in anything”, and many more kept stopping me from setting up my own blog. Now seemed like a good time as any so with those and tons of other questions in my mind I decided it was time to start.&lt;/p&gt;
 
 &lt;p&gt;Funnily, this is not my first post. The birth of the blog came very natural as a way to “document” my newly established pursuit for getting myself into Machine Learning. This new adventure of mine comprises several things, and if I want to succeed I need to be serious about them all:&lt;/p&gt;

@@ -22,7 +22,7 @@
   "headline": "solve Gitalk not found error",
   "abstract": "how to handle with not found error when you deployed Gitalk for comment feature on your blogs",
     "keywords": "general blogging, thoughts",
-    "wordcount": "113",
+    "wordcount": "134",
     "image": ["http://localhost:4000/assets/imgposts/20210420/post8-rembrandt.jpg"],
   "datePublished": "2022-01-11 00:00:00 +0800",
   "dateModified": "2022-01-11 00:00:00 +0800",
@@ -62,7 +62,7 @@
 <meta name="twitter:description" content="how to handle with not found error when you deployed Gitalk for comment feature on your blogs">
 <meta name="twitter:creator" content="">
 <meta data-rh="true" name="twitter:label1" content="Word count"/>
-<meta data-rh="true" name="twitter:data1" content="113"/>
+<meta data-rh="true" name="twitter:data1" content="134"/>
 <meta name="twitter:image:src" content="http://localhost:4000/assets/img/posts/20210420/post8-rembrandt.jpg">
 	<!-- Windows Phone -->
 	<meta name="msapplication-navbutton-color" content="#311e3e">
@@ -171,7 +171,7 @@
   </span>
 
         <div class="post-excerpt">
-            <p>I chose the Jekyll theme: <a href="https://github.com/the-mvm/the-mvm.github.io">Adam Blog 2.0</a> as my github blog pages.The official guide is very clear and simple so that I can deploy my blog very fast.</p><p>But the original comment plug-in:Disqus is a paid service, so I tried another popular comment tool:<a href="https://gitalk.github.io/">GiTalk</a>.Everything is fine until I met with “Not Found” Error when I deployed.</p><p>The followings are the steps to solve this “Not Found” error when activating gitalk on your webpage:</p><ol> <li>Create a new github repo for comments storage</li> <li>Enabling the “issues” of this repo,and activate the “issue”</li> <li>Configure the OAuth Apps in Github Apps setting</li> <li>Configure...<a class="read-more" href="./solve-Gitalk-not-found-error.html"> read more</a>
+            <p>I chose the Jekyll theme: <a href="https://github.com/the-mvm/the-mvm.github.io">Adam Blog 2.0</a> as my github blog pages.The official guide is very clear and simple so that I can deploy my blog very fast.</p><p><img src="./assets/img/template_screenshots/homepage-responsive.jpg" alt="my new blog" /></p><p><img src="./assets/img/template_screenshots/light-toggle.png" alt="night theme toggle" /></p><p>But the original comment plug-in:Disqus is a paid service, so I tried another popular comment tool:<a href="https://gitalk.github.io/">GiTalk</a>.Everything is fine until I met with “Not Found” Error when I deployed.</p><p><img src="./assets/img/posts/20220111/GiTalk_error.png" alt="not found error" /></p><p>The followings are the steps to solve this “Not Found” error when activating gitalk on your webpage:</p><ul> <li>Create a new github repo for comments storage</li></ul><p><img src="./assets/img/posts/20220111/create_new_repo_comment.png" alt="create comment...<a class="read-more" href="./solve-Gitalk-not-found-error.html"> read more</a>
         </div>
   </div>
 </section>
@@ -349,16 +349,47 @@
         
         <p>I chose the Jekyll theme: <a href="https://github.com/the-mvm/the-mvm.github.io">Adam Blog 2.0</a> as my github blog pages.The official guide is very clear and simple so that I can deploy my blog very fast.</p>
 
+<p><img src="./assets/img/template_screenshots/homepage-responsive.jpg" alt="my new blog" /></p>
+
+<p><img src="./assets/img/template_screenshots/light-toggle.png" alt="night theme toggle" /></p>
+
 <p>But the original comment plug-in:Disqus is a paid service, so I tried another popular comment tool:<a href="https://gitalk.github.io/">GiTalk</a>.Everything is fine until I met with “Not Found” Error when I deployed.</p>
 
+<p><img src="./assets/img/posts/20220111/GiTalk_error.png" alt="not found error" /></p>
+
 <p>The followings are the steps to solve this “Not Found” error when activating gitalk on your webpage:</p>
-<ol>
+<ul>
   <li>Create a new github repo for comments storage</li>
-  <li>Enabling the “issues” of this repo,and activate the “issue”</li>
+</ul>
+
+<p><img src="./assets/img/posts/20220111/create_new_repo_comment.png" alt="create comment repo" /></p>
+
+<ul>
+  <li>Enabling the “issues” of this repo,and activate the “issues” with first comment</li>
+</ul>
+
+<p><img src="./assets/img/posts/20220111/issues_enabled.png" alt="issues enabled" />
+<img src="./assets/img/posts/20220111/create_first_comment.png" alt="first comment" /></p>
+
+<ul>
   <li>Configure the OAuth Apps in Github Apps setting</li>
-  <li>Configure the “repo” of gitalk js code without “https://” ,
-like this:  repo: blog-comments</li>
-</ol>
+</ul>
+
+<p><img src="./assets/img/posts/20220111/clientID_key.png" alt="app kid key" />
+<img src="./assets/img/posts/20220111/set_OAuth.png" alt="set Oauth" /></p>
+
+<ul>
+  <li>Configure the “repo” of gitalk js code without “https://” prefix ,
+just set it like this:  repo: blog-comments(repo name)</li>
+</ul>
+
+<p><img src="./assets/img/posts/20220111/set repo.png" alt="Set repo name" /></p>
+
+<p>Finally, you can see the perfect GiTalk tool on your webpage.</p>
+
+<p><img src="./assets/img/posts/20220111/correct_GiTalk.png" alt="enjoy" /></p>
+
+<p>Enjoy GiTalk!</p>
 
         <aside class="sidebar inline" id="post-end">
     

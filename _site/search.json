@@ -7,7 +7,7 @@
       "url"         : "./solve-Gitalk-not-found-error.html",
       "date"        : "2022-01-11 00:00:00 +0800",
       "description" : "how to handle with not found error when you deployed Gitalk for comment feature on your blogs",
-      "content"     : "I chose the Jekyll theme: Adam Blog 2.0 as my github blog pages.The official guide is very clear and simple so that I can deploy my blog very fast.But the original comment plug-in:Disqus is a paid service, so I tried another popular comment tool:GiTalk.Everything is fine until I met with “Not Found” Error when I deployed.The followings are the steps to solve this “Not Found” error when activating gitalk on your webpage: Create a new github repo for comments storage Enabling the “issues” of this repo,and activate the “issue” Configure the OAuth Apps in Github Apps setting Configure the “repo” of gitalk js code without “https://” ,like this: repo: blog-comments"
+      "content"     : "I chose the Jekyll theme: Adam Blog 2.0 as my github blog pages.The official guide is very clear and simple so that I can deploy my blog very fast.But the original comment plug-in:Disqus is a paid service, so I tried another popular comment tool:GiTalk.Everything is fine until I met with “Not Found” Error when I deployed.The followings are the steps to solve this “Not Found” error when activating gitalk on your webpage: Create a new github repo for comments storage Enabling the “issues” of this repo,and activate the “issues” with first comment Configure the OAuth Apps in Github Apps setting Configure the “repo” of gitalk js code without “https://” prefix ,just set it like this: repo: blog-comments(repo name)Finally, you can see the perfect GiTalk tool on your webpage.Enjoy GiTalk!"
     } ,
   
     {

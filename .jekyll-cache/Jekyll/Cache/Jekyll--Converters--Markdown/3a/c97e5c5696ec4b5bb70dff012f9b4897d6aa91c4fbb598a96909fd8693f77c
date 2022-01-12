@@ -1,0 +1,44 @@
+I"�<p>I chose the Jekyll theme: <a href="https://github.com/the-mvm/the-mvm.github.io">Adam Blog 2.0</a> as my github blog pages.The official guide is very clear and simple so that I can deploy my blog very fast.</p>
+
+<p><img src="./assets/img/template_screenshots/homepage-responsive.jpg" alt="my new blog" /></p>
+
+<p><img src="./assets/img/template_screenshots/light-toggle.png" alt="night theme toggle" /></p>
+
+<p>But the original comment plug-in:Disqus is a paid service, so I tried another popular comment tool:<a href="https://gitalk.github.io/">GiTalk</a>.Everything is fine until I met with “Not Found” Error when I deployed.</p>
+
+<p><img src="./assets/img/posts/20220111/GiTalk_error.png" alt="not found error" /></p>
+
+<p>The followings are the steps to solve this “Not Found” error when activating gitalk on your webpage:</p>
+<ul>
+  <li>Create a new github repo for comments storage</li>
+</ul>
+
+<p><img src="./assets/img/posts/20220111/create_new_repo_comment.png" alt="create comment repo" /></p>
+
+<ul>
+  <li>Enabling the “issues” of this repo,and activate the “issues” with first comment</li>
+</ul>
+
+<p><img src="./assets/img/posts/20220111/issues_enabled.png" alt="issues enabled" />
+<img src="./assets/img/posts/20220111/create_first_comment.png" alt="first comment" /></p>
+
+<ul>
+  <li>Configure the OAuth Apps in Github Apps setting</li>
+</ul>
+
+<p><img src="./assets/img/posts/20220111/clientID_key.png" alt="app kid key" />
+<img src="./assets/img/posts/20220111/set_OAuth.png" alt="set Oauth" /></p>
+
+<ul>
+  <li>Configure the “repo” of gitalk js code without “https://” prefix ,
+just set it like this:  repo: blog-comments(repo name)</li>
+</ul>
+
+<p><img src="./assets/img/posts/20220111/set repo.png" alt="Set repo name" /></p>
+
+<p>Finally, you can see the perfect GiTalk tool on your webpage.</p>
+
+<p><img src="./assets/img/posts/20220111/correct_GiTalk.png" alt="enjoy" /></p>
+
+<p>Enjoy GiTalk!</p>
+:ET
